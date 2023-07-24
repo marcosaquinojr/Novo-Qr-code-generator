@@ -1,0 +1,716 @@
+<style type="text/css">
+    p{
+        margin:10px 0;
+        padding:0;
+    }
+    table{
+        border-collapse:collapse;
+    }
+    h1,h2,h3,h4,h5,h6{
+        display:block;
+        margin:0;
+        padding:0;
+    }
+    img,a img{
+        border:0;
+        height:auto;
+        outline:none;
+        text-decoration:none;
+    }
+    body,#bodyTable,#bodyCell{
+        height:100%;
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    .mcnPreviewText{
+        display:none !important;
+    }
+    #outlook a{
+        padding:0;
+    }
+    img{
+        -ms-interpolation-mode:bicubic;
+    }
+    table{
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+    }
+    .ReadMsgBody{
+        width:100%;
+    }
+    .ExternalClass{
+        width:100%;
+    }
+    p,a,li,td,blockquote{
+        mso-line-height-rule:exactly;
+    }
+    a[href^=tel],a[href^=sms]{
+        color:inherit;
+        cursor:default;
+        text-decoration:none;
+    }
+    p,a,li,td,body,table,blockquote{
+        -ms-text-size-adjust:100%;
+        -webkit-text-size-adjust:100%;
+    }
+    .ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.ExternalClass span,.ExternalClass font{
+        line-height:100%;
+    }
+    a[x-apple-data-detectors]{
+        color:inherit !important;
+        text-decoration:none !important;
+        font-size:inherit !important;
+        font-family:inherit !important;
+        font-weight:inherit !important;
+        line-height:inherit !important;
+    }
+    .templateContainer{
+        max-width:600px !important;
+    }
+    a.mcnButton{
+        display:block;
+    }
+    .mcnImage,.mcnRetinaImage{
+        vertical-align:bottom;
+    }
+    .mcnTextContent{
+        word-break:break-word;
+    }
+    .mcnTextContent img{
+        height:auto !important;
+    }
+    .mcnDividerBlock{
+        table-layout:fixed !important;
+    }
+    h1{
+        color:#222222;
+        font-family:Helvetica;
+        font-size:40px;
+        font-style:normal;
+        font-weight:bold;
+        line-height:150%;
+        letter-spacing:normal;
+        text-align:center;
+    }
+    h2{
+        color:#222222;
+        font-family:Helvetica;
+        font-size:34px;
+        font-style:normal;
+        font-weight:bold;
+        line-height:150%;
+        letter-spacing:normal;
+        text-align:left;
+    }
+    h3{
+        color:#444444;
+        font-family:Helvetica;
+        font-size:22px;
+        font-style:normal;
+        font-weight:bold;
+        line-height:150%;
+        letter-spacing:normal;
+        text-align:left;
+    }
+    h4{
+        color:#949494;
+        font-family:Georgia;
+        font-size:20px;
+        font-style:italic;
+        font-weight:normal;
+        line-height:125%;
+        letter-spacing:normal;
+        text-align:left;
+    }
+    #templateHeader{
+        background-color:#F7F7F7;
+        background-image:none;
+        background-repeat:no-repeat;
+        background-position:50% 50%;
+        background-size:cover;
+        border-top:0;
+        border-bottom:0;
+        padding-top:45px;
+        padding-bottom:45px;
+    }
+    .headerContainer{
+        background-color:transparent;
+        background-image:none;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        border-top:0;
+        border-bottom:0;
+        padding-top:0;
+        padding-bottom:0;
+    }
+    .headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+        color:#757575;
+        font-family:Helvetica;
+        font-size:16px;
+        line-height:150%;
+        text-align:left;
+    }
+    .headerContainer .mcnTextContent a,.headerContainer .mcnTextContent p a{
+        color:#007C89;
+        font-weight:normal;
+        text-decoration:underline;
+    }
+    #templateBody{
+        background-color:#ffffff;
+        background-image:none;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        border-top:0;
+        border-bottom:0;
+        padding-top:36px;
+        padding-bottom:45px;
+    }
+    .bodyContainer{
+        background-color:#transparent;
+        background-image:none;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        border-top:0;
+        border-bottom:0;
+        padding-top:0;
+        padding-bottom:0;
+    }
+    .bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+        color:#757575;
+        font-family:Helvetica;
+        font-size:16px;
+        line-height:150%;
+        text-align:left;
+    }
+    .bodyContainer .mcnTextContent a,.bodyContainer .mcnTextContent p a{
+        color:#007C89;
+        font-weight:normal;
+        text-decoration:underline;
+    }
+    #templateFooter{
+        background-color:#333333;
+        background-image:none;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        border-top:0;
+        border-bottom:0;
+        padding-top:45px;
+        padding-bottom:63px;
+    }
+    .footerContainer{
+        background-color:transparent;
+        background-image:none;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        border-top:0;
+        border-bottom:0;
+        padding-top:0;
+        padding-bottom:0;
+    }
+    .footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+        color:#FFFFFF;
+        font-family:Helvetica;
+        font-size:12px;
+        line-height:150%;
+        text-align:center;
+    }
+    .footerContainer .mcnTextContent a,.footerContainer .mcnTextContent p a{
+        color:#FFFFFF;
+        font-weight:normal;
+        text-decoration:underline;
+    }
+@media only screen and (min-width:768px){
+    .templateContainer{
+        width:600px !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    body,table,td,p,a,li,blockquote{
+        -webkit-text-size-adjust:none !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    body{
+        width:100% !important;
+        min-width:100% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnRetinaImage{
+        max-width:100% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnImage{
+        width:100% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCaptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCardRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImageCardRightImageContentContainer{
+        max-width:100% !important;
+        width:100% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnBoxedTextContentContainer{
+        min-width:100% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnImageGroupContent{
+        padding:9px !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter .mcnTextContent{
+        padding-top:9px !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent{
+        padding-top:18px !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnImageCardBottomImageContent{
+        padding-bottom:9px !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnImageGroupBlockInner{
+        padding-top:0 !important;
+        padding-bottom:0 !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnImageGroupBlockOuter{
+        padding-top:9px !important;
+        padding-bottom:9px !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnTextContent,.mcnBoxedTextContentColumn{
+        padding-right:18px !important;
+        padding-left:18px !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+        padding-right:18px !important;
+        padding-bottom:0 !important;
+        padding-left:18px !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcpreview-image-uploader{
+        display:none !important;
+        width:100% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    h1{
+        font-size:30px !important;
+        line-height:125% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    h2{
+        font-size:26px !important;
+        line-height:125% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    h3{
+        font-size:20px !important;
+        line-height:150% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    h4{
+        font-size:18px !important;
+        line-height:150% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContainer .mcnTextContent p{
+        font-size:14px !important;
+        line-height:150% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+        font-size:16px !important;
+        line-height:150% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+        font-size:16px !important;
+        line-height:150% !important;
+    }
+
+}	@media only screen and (max-width: 480px){
+    .footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+        font-size:14px !important;
+        line-height:150% !important;
+    }
+
+}</style><!--[if !mso]><!--><link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet"><!--<![endif]--><style type="text/css">
+
+h4 
+{
+    text-align: left;
+}
+
+@media screen 
+{
+
+.headerLineTitle
+{
+    width:1.5in;
+    display:inline-block;
+    margin:0in;
+    margin-bottom:.0001pt;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+    font-weight:bold;
+}
+
+.headerLineText
+{
+    display:inline;
+    margin:0in;
+    margin-bottom:.0001pt;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+    font-weight:normal;
+}
+
+.pageHeader
+{
+    font-size:14.0pt;
+    font-family:"Calibri","sans-serif";
+    font-weight:bold;
+    visibility:hidden;
+    display:none;
+}   
+}
+
+@media print 
+{
+.headerLineTitle
+{
+    width:1.5in;
+    display:inline-block;
+    margin:0in;
+    margin-bottom:.0001pt;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+    font-weight:bold;
+}
+
+.headerLineText
+{
+    display:inline;
+    margin:0in;
+    margin-bottom:.0001pt;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";
+    font-weight:normal;
+}
+
+.pageHeader
+{
+    font-size:14.0pt;
+    font-family:"Calibri","sans-serif";
+    font-weight:bold;
+    visibility:visible;
+    display:block;
+}
+
+}
+</style>
+</head><body style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><span class='headerLineTitle'>From:</span><span class='headerLineText'>markosjuniior@gmail.com</span><br/><span class='headerLineTitle'>Sent:</span><span class='headerLineText'>Sat, 15 Jul 2023 16:07:04 +0000</span><br/><span class='headerLineTitle'>To:</span><span class='headerLineText'>marcosaquinojr@outlook.com</span><br/><span class='headerLineTitle'>Subject:</span><span class='headerLineText'>Mailchimp Template Test - &quot;Atl&#233;tica Turing&quot;</span><br/><br/>
+
+    <!--*|IF:MC_PREVIEW_TEXT|*-->
+    <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
+    <!--*|END:IF|*-->
+    <center>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;">
+            <tr>
+                <td align="center" valign="top" id="bodyCell" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;">
+                    <!-- BEGIN TEMPLATE // -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tr>
+                            <td align="center" valign="top" id="templateHeader" data-template-container="" style="background:#F7F7F7 none no-repeat 50% 50%/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #F7F7F7;background-image: none;background-repeat: no-repeat;background-position: 50% 50%;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 45px;padding-bottom: 45px;">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                <tr>
+                                <td align="center" valign="top" width="600" style="width:600px;">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !important;">
+                                    <tr>
+                                        <td valign="top" class="headerContainer" style="background:transparent none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"></td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" id="templateBody" data-template-container="" style="background:#ffffff none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #ffffff;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 36px;padding-bottom: 45px;">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                <tr>
+                                <td align="center" valign="top" width="600" style="width:600px;">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !important;">
+                                    <tr>
+                                        <td valign="top" class="bodyContainer" style="background:#transparent none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody class="mcnTextBlockOuter">
+    <tr>
+        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+              <!--[if mso]>
+            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+            <tr>
+            <![endif]-->
+            
+            <!--[if mso]>
+            <td valign="top" width="600" style="width:600px;">
+            <![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
+                <tbody><tr>
+                    
+                    <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #757575;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                    
+                        <h1 style="text-align: left;display: block;margin: 0;padding: 0;color: #222222;font-family: Helvetica;font-size: 40px;font-style: normal;font-weight: bold;line-height: 150%;letter-spacing: normal;"><span style="font-size:24px">Hey, obrigado por usar o meu template!</span></h1>
+
+                    </td>
+                </tr>
+            </tbody></table>
+            <!--[if mso]>
+            </td>
+            <![endif]-->
+            
+            <!--[if mso]>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody class="mcnImageBlockOuter">
+        <tr>
+            <td valign="top" style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnImageBlockInner">
+                <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            
+                                
+                                    <img align="center" alt="" src="https://mcusercontent.com/da72528091f9027dbdd1c7488/images/0092a231-c71e-31e4-f868-8e1b7eda4e55.png" width="377.88" style="max-width: 1080px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                
+                            
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+</tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody class="mcnButtonBlockOuter">
+    <tr>
+        <td style="padding-top: 0;padding-right: 18px;padding-bottom: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="center" class="mcnButtonBlockInner">
+            <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 4px;background-color: #373838;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                <tbody>
+                    <tr>
+                        <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <a class="mcnButton " title="Download aqui!" href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fus17.mailchimp.com%2Fmctx%2Fclicks%3Furl%3Dhttps%253A%252F%252Fmarcosaquino.notion.site%252FAkno-OS-Template-b55b9a84eec74fb89bd63a7d2bd3fea5%253Fpvs%253D4%26xid%3Db958a6c7aa%26uid%3D91224517%26iid%3D93487%26pool%3Dtemplate_test%26v%3D2%26c%3D1689437224%26h%3D5cbb155f54c87177f3e196fe50013bd4cc6bf7f39b072e9d68b1b95b0242daba&amp;data=05%7C01%7C%7C154a9e03d060466f1ad108db854d8893%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638250340275084110%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=8HUsRniG4%2Blw9vpygaIr6H1usVbF%2FSdBzKvD7Xd4SZQ%3D&amp;reserved=0" originalsrc="https://us17.mailchimp.com/mctx/clicks?url=https%3A%2F%2Fmarcosaquino.notion.site%2FAkno-OS-Template-b55b9a84eec74fb89bd63a7d2bd3fea5%3Fpvs%3D4&amp;xid=b958a6c7aa&amp;uid=91224517&amp;iid=93487&amp;pool=template_test&amp;v=2&amp;c=1689437224&amp;h=5cbb155f54c87177f3e196fe50013bd4cc6bf7f39b072e9d68b1b95b0242daba" shash="i5yfT17NgA+yZXVKd1Ime+qCp81HvKPikmvCpVkloRDphtZHnU6Xk1dp66K1BRnvqE9vomaqfYiSeuWsi3BmZaxhO7Bb/LvtG6nScBBPhFExlEh+rUUYBjGkgYQWNv3s7R4drLn8lXohjGh4vdYtkfQIwYDTKPhrqlI+dAdpiGA=" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Download aqui!</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody class="mcnTextBlockOuter">
+    <tr>
+        <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+              <!--[if mso]>
+            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+            <tr>
+            <![endif]-->
+            
+            <!--[if mso]>
+            <td valign="top" width="600" style="width:600px;">
+            <![endif]-->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
+                <tbody><tr>
+                    
+                    <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;font-family: Arvo, Courier, Georgia, serif;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #757575;font-size: 16px;line-height: 150%;text-align: left;">
+                    
+                        Espero que sua rotina seja mais produtiva e organizada com esse modelo. Qualquer dúvida ou sugestão de melhoria, é mandar um “oi”!&nbsp;
+                    </td>
+                </tr>
+            </tbody></table>
+            <!--[if mso]>
+            </td>
+            <![endif]-->
+            
+            <!--[if mso]>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody class="mcnImageBlockOuter">
+        <tr>
+            <td valign="top" style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnImageBlockInner">
+                <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            
+                                
+                                    <img align="center" alt="" src="https://mcusercontent.com/da72528091f9027dbdd1c7488/images/1cc3f169-0ea6-623e-c159-6f32f9a7b9d4.png" width="564" style="max-width: 2785px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                
+                            
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+</tbody>
+</table></td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" id="templateFooter" data-template-container="" style="background:#333333 none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #333333;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 45px;padding-bottom: 63px;">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                <tr>
+                                <td align="center" valign="top" width="600" style="width:600px;">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !important;">
+                                    <tr>
+                                        <td valign="top" class="footerContainer" style="background:transparent none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody class="mcnFollowBlockOuter">
+    <tr>
+        <td align="center" valign="top" style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowBlockInner">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentContainer" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody><tr>
+    <td align="center" style="padding-left: 9px;padding-right: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowContent">
+            <tbody><tr>
+                <td align="center" valign="top" style="padding-top: 9px;padding-right: 9px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <!--[if mso]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                <![endif]-->
+                                
+                                    <!--[if mso]>
+                                    <td align="center" valign="top">
+                                    <![endif]-->
+                                    
+                                    
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" style="display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign="top" style="padding-right: 0;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowContentItemContainer">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align="left" valign="middle" style="padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody><tr>
+                                                                        
+                                                                            <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fus17.mailchimp.com%2Fmctx%2Fclicks%3Furl%3Dhttp%253A%252F%252Fwww.instagram.com%252Fatleticaturing%26xid%3Db958a6c7aa%26uid%3D91224517%26iid%3D93487%26pool%3Dtemplate_test%26v%3D2%26c%3D1689437224%26h%3D6a9b6c58ed5bf3d53e5fa84da902ef85e1c8604a77af5e8399bebb447cc652a3&amp;data=05%7C01%7C%7C154a9e03d060466f1ad108db854d8893%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638250340275084110%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=eRbuawDLsaDusOwsxvhoeiait%2FlNND3y6jQBBXsOnA0%3D&amp;reserved=0" originalsrc="https://us17.mailchimp.com/mctx/clicks?url=http%3A%2F%2Fwww.instagram.com%2Fatleticaturing&amp;xid=b958a6c7aa&amp;uid=91224517&amp;iid=93487&amp;pool=template_test&amp;v=2&amp;c=1689437224&amp;h=6a9b6c58ed5bf3d53e5fa84da902ef85e1c8604a77af5e8399bebb447cc652a3" shash="iPIw6GIZ/rC01Lq0e3821aO3uHr0DihcKF8xgoNMStwPS2Pdi7iCM3MI34Xivx2CbMtxz7O7TC17l8n8B7gD8imVoLE1I2lnLdhaVybTttKL3DFXxyxsYDFApWX+eYx7sgP8kHlKtkEGR4Pvl7PK9FUxllTvchpnHDIUDYtJZJo=" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-instagram-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                            </td>
+                                                                        
+                                                                        
+                                                                    </tr>
+                                                                </tbody></table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    
+                                    <!--[if mso]>
+                                    </td>
+                                    <![endif]-->
+                                
+                                <!--[if mso]>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+    </td>
+</tr>
+</tbody></table>
+
+        </td>
+    </tr>
+</tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+<tbody class="mcnDividerBlockOuter">
+    <tr>
+        <td class="mcnDividerBlockInner" style="min-width: 100%;padding: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+            <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #505050;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                <tbody><tr>
+                    <td style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <span></span>
+                    </td>
+                </tr>
+            </tbody></table>
+<!--            
+            <td class="mcnDividerBlockInner" style="padding: 18px;">
+            <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+-->
+        </td>
+    </tr>
+</tbody>
+</table></td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- // END TEMPLATE -->
+                </td>
+            </tr>
+        </table>
+    </center>
+<img src="https://us17.mailchimp.com/mctx/opens?xid=b958a6c7aa&amp;uid=91224517&amp;pool=template_test&amp;subject=%3D%3Futf-8%3FQ%3FMailchimp%3D20Template%3D20Test%3D20%3D2D%3D20%3D22Atl%3DC3%3DA9tica%3D20Turing%3D22%3F%3D" height="1" width="1" alt=""></body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="light-mode">
+<head>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link id="theme-style" rel="stylesheet" type="text/css" href="styles-light.css">
+  <link rel="stylesheet" type="text/css" href="styles-dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <img id="logo" src="logo-dark.png" alt="Logo" class="logo">
+</head>
+<body>
+  <div class="container">
+    <input id="text" type="text" placeholder="Digite o link para gerar o seu código QR" />
+    <div class="buttons">
+      <button id="generate" onclick="generateQRCode()">Gerar</button>
+      <button id="download" onclick="downloadQRCode()" disabled>Download</button>
+    </div>
+    <div id="qrcode-container"></div>
+    <label class="switch">
+        <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+        <span class="slider round"></span>
+        <span class="toggle-icons">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </span>
+      </label>  
+  </div>
+  <footer class="footer">
+    Desenvolvido por Marcos Aquino
+    <div class="social-icons">
+      <a href="https://github.com/marcosaquinojr" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/ocaradoglide" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="script.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Conforta', Arial, sans-serif;
+    background-color: #F5F0E8;
+    color: #000000;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 600px;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.4); /* Opacidade diminuída para 40% */
+  }
+  
+  input[type="text"]:focus {
+    background-color: #F5F5F5;
+    outline: none;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 16px;    
+    border: none;
+    border-radius: 5px;
+    background-color: #969696; 
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Conforta', Arial, sans-serif;
+  }
+
+  button:hover {
+    background-color: #2e2e2e;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #qrcode-container {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #qrcode-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch input {
+    display: none;
+  }
+
+  .switch .toggle-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .switch .toggle-icons i {
+    font-size: 20px;
+    margin: 0 2px;
+  }
+  
+  .switch .toggle-icons .fa-sun {
+    color: #FFC107;
+  }
+  
+  .switch .toggle-icons .fa-moon {
+    color: #ccc;
+  }
+  
+  .slider {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    border-radius: 34px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .slider:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 4px;
+    left: 4px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  input:checked + .slider {
+    background-color: #636363;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .round {
+    border-radius: 34px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Defina a largura apropriada de acordo com a proporção da imagem */
+    z-index: 999;
+  }
+
+ .footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex; /* Adiciona flexbox para alinhar os ícones horizontalmente */
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Remove a margem à direita do último ícone para evitar espaços extras */
+}
+
+.social-icons a:hover {
+  color: #4CAF50;
+}

@@ -1,0 +1,95 @@
+.dark-mode body {
+    background-color: #242223;
+    color: #FFFFFF;
+  }
+  
+  .dark-mode input[type="text"] {
+    border-bottom: 2px solid #4CAF50; /* Alterada para a cor #4CAF50 */
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.4); /* Opacidade diminuída para 40% */
+  }
+  
+  .dark-mode button {
+    background-color: #636363; /* Cinza */
+    color: #FFFFFF;
+    font-family: 'Conforta', Arial, sans-serif;
+  }
+  
+  .dark-mode button:disabled {
+    background-color: #808080;
+    cursor: not-allowed;
+  }
+  
+  .dark-mode #qrcode-container img {
+    border-radius: 15px;
+  }
+  
+  .dark-mode .switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+  }
+
+  .dark-mode .switch .toggle-icons .fa-sun {
+    color: #636363;
+  }
+  
+  .dark-mode .switch .toggle-icons .fa-moon {
+    color: #607D8B;
+  }
+  
+  .dark-mode .slider:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 4px;
+    left: 4px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dark-mode input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Defina a largura apropriada de acordo com a proporção da imagem */
+    z-index: 999;
+  }
+
+  .dark-mode .footer {
+    color: #ccc;
+  }
+  
+  .dark-mode .social-icons {
+    display: flex; /* Adiciona flexbox para alinhar os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-top: 10px;
+  }
+  
+  .dark-mode .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 18px;
+  }
+  
+  .dark-mode .social-icons a:last-child {
+    margin-right: 0; /* Remove a margem à direita do último ícone para evitar espaços extras */
+  }
+  
+  .dark-mode .social-icons a:hover {
+    color: #4CAF50;
+  }
