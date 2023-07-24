@@ -4,17 +4,17 @@
   }
   
   .dark-mode input[type="text"] {
-    border-bottom: 2px solid #4CAF50; /* Alterada para a cor #4CAF50 */
+    border-bottom: 2px solid #4CAF50; 
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
   }
   
   .dark-mode input[type="text"]::placeholder {
-    color: rgba(255, 255, 255, 0.4); /* Opacidade diminuída para 40% */
+    color: rgba(255, 255, 255, 0.4); 
   }
   
   .dark-mode button {
-    background-color: #636363; /* Cinza */
+    background-color: #636363; 
     color: #FFFFFF;
     font-family: 'Conforta', Arial, sans-serif;
   }
@@ -65,7 +65,7 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 100px; /* Defina a largura apropriada de acordo com a proporção da imagem */
+    width: 100px; 
     z-index: 999;
   }
 
@@ -74,8 +74,8 @@
   }
   
   .dark-mode .social-icons {
-    display: flex; /* Adiciona flexbox para alinhar os ícones horizontalmente */
-    justify-content: center; /* Centraliza os ícones horizontalmente */
+    display: flex; 
+    justify-content: center; 
     margin-top: 10px;
   }
   
@@ -87,7 +87,7 @@
   }
   
   .dark-mode .social-icons a:last-child {
-    margin-right: 0; /* Remove a margem à direita do último ícone para evitar espaços extras */
+    margin-right: 0; 
   }
   
   .dark-mode .social-icons a:hover {

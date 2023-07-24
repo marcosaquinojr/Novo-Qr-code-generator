@@ -27,7 +27,7 @@ body {
   }
   
   input[type="text"]::placeholder {
-    color: rgba(0, 0, 0, 0.4); /* Opacidade diminuída para 40% */
+    color: rgba(0, 0, 0, 0.4); 
   }
   
   input[type="text"]:focus {
@@ -148,7 +148,7 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 100px; /* Defina a largura apropriada de acordo com a proporção da imagem */
+    width: 100px; 
     z-index: 999;
   }
 
@@ -162,8 +162,8 @@ body {
 }
 
 .social-icons {
-  display: flex; /* Adiciona flexbox para alinhar os ícones horizontalmente */
-  justify-content: center; /* Centraliza os ícones horizontalmente */
+  display: flex; 
+  justify-content: center; 
   margin-top: 10px;
 }
 
@@ -175,7 +175,7 @@ body {
 }
 
 .social-icons a:last-child {
-  margin-right: 0; /* Remove a margem à direita do último ícone para evitar espaços extras */
+  margin-right: 0; 
 }
 
 .social-icons a:hover {

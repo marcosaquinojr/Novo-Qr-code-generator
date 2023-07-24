@@ -2,15 +2,15 @@ function toggleTheme() {
   const htmlElement = document.getElementsByTagName('html')[0];
   htmlElement.classList.toggle('dark-mode');
 
-  // Altera o ícone do botão de alternância de tema
+  // Altera o ícone do botão de mudar o tema
   const themeToggle = document.getElementById('theme-toggle');
   themeToggle.classList.toggle('dark-mode');
 
   // Altera a imagem da logo de acordo com o tema
   const logo = document.getElementById('logo');
   if (htmlElement.classList.contains('dark-mode')) {
-    logo.src = 'logo-light.png'; // Substitua 'logo-dark.png' pelo caminho da imagem para o tema dark
+    logo.src = '/IMG/logo-light.png'; 
   } else {
-    logo.src = 'logo-dark.png'; // Substitua 'logo-light.png' pelo caminho da imagem para o tema light
+    logo.src = '/IMG/logo-dark.png'; 
   }
 }
