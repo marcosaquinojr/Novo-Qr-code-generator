@@ -12,9 +12,12 @@
 
 - **Compatibilidade Multiplataforma**: A ferramenta é compatível com diversos dispositivos e sistemas operacionais, permitindo que você crie códigos QR em qualquer lugar.
 
+- **Modo Claro/Noturno**: A ferramenta pode mudar o esquema de cores com o modo claro e noturno.
+
+
 ## Como Usar
 
-1. Acesse o Gerador de Códigos QR em [www.gerador-qr.com](www.gerador-qr.com).
+1. Acesse o Gerador de Códigos QR em [https://geradordeqrcode.vercel.app/](https://geradordeqrcode.vercel.app/).
 
 2. Insira o URL desejada na caixa de entrada.
 
